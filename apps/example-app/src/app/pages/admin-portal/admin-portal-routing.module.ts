@@ -1,17 +1,25 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { SideNavComponent } from '../../components/side-nav/side-nav.component';
 import { AdminPortalComponent } from './admin-portal.component';
 import { SingleChildComponent } from './single-child/single-child.component';
 
 const routes: Routes = [
     {
-        path: '',
+        path: '', //admin-portal
         component: AdminPortalComponent,
-    },
-    {
-        path: 'single-child',
-        component: SingleChildComponent,
+        children: [
+            {
+                path: 'single-child',
+                component: SingleChildComponent,
+            },
+            {
+                path: '',
+                outlet: 'side-menu-outlet',
+                component: SideNavComponent,
+            },
+        ],
     },
     {
         path: 'children-module',
