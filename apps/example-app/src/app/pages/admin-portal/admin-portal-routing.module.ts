@@ -8,6 +8,10 @@ const routes: Routes = [
         path: '',
         component: AdminPortalComponent,
     },
+    {
+        path: '',
+        component: AdminPortalComponent,
+    },
 ];
 
 @NgModule({

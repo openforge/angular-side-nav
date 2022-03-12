@@ -9,6 +9,6 @@ export class AdminPortalComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {
-        //
+        console.warn('admin-portal', 'ngOnInit()');
     }
 }
