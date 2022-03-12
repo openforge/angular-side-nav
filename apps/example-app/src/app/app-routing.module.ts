@@ -7,6 +7,10 @@ const routes: Routes = [
         loadChildren: () => import('./home/home.module').then(m => m.HomePageModule),
     },
     {
+        path: 'adminPortal',
+        loadChildren: () => import('./pages/admin-portal/admin-portal.module').then(m => m.AdminPortalModule),
+    },
+    {
         path: '',
         redirectTo: 'home',
         pathMatch: 'full',
