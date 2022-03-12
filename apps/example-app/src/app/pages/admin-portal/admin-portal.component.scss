@@ -1,0 +1,6 @@
+.admin-portal {
+    display: flex;
+    width: 100vw;
+    height: 87.5vh;
+    overflow: auto; /* https://stackoverflow.com/questions/4069734/fixed-header-footer-with-scrollable-content*/
+}
