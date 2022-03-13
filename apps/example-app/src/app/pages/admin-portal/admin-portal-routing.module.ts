@@ -17,7 +17,7 @@ const routes: Routes = [
             },
             {
                 path: '',
-                outlet: 'side-menu-outlet',
+                outlet: 'sidemenu',
                 component: SideNavComponent,
             },
             {
