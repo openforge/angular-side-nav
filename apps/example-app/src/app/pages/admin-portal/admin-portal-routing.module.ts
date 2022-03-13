@@ -10,6 +10,7 @@ const routes: Routes = [
         path: '', //admin-portal
         component: AdminPortalComponent,
         children: [
+            // NOTE:  Order definitely matthers here!
             {
                 path: 'single-child',
                 component: SingleChildComponent,
@@ -19,11 +20,15 @@ const routes: Routes = [
                 outlet: 'side-menu-outlet',
                 component: SideNavComponent,
             },
+            {
+                path: 'children-module',
+                loadChildren: () => import('./children-module/children.module').then(m => m.ChildrenModule),
+            },
         ],
     },
     {
-        path: 'children-module',
-        loadChildren: () => import('./children-module/children-routing.module').then(m => m.ChildrenRoutingModule),
+        path: 'children-module-in-place-of-admin-portal',
+        loadChildren: () => import('./children-module/children.module').then(m => m.ChildrenModule),
     },
 ];
 

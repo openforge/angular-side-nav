@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'openforge-ionic-monorepo-example-children-module',
+    selector: 'openforge-children-module',
     templateUrl: './children-module.component.html',
     styleUrls: ['./children-module.component.scss'],
 })
