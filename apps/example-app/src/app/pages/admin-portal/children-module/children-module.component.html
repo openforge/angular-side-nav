@@ -4,6 +4,12 @@
   </ion-card-header>
 
   <ion-card-content>
-    <button><a routerLink="../">back with ../</a></button>
+    <ul>
+      <li><button><a routerLink="../">back with ../</a></button></li>
+      <li><button><a routerLink="./grand-child/">Forward to GrandChild with ./grand-child</a></button></li>
+    </ul>
+
   </ion-card-content>
 </ion-card>
+
+<router-outlet></router-outlet>
