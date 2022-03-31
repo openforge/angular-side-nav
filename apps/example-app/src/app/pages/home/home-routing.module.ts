@@ -7,6 +7,9 @@ const routes: Routes = [
     {
         path: '',
         component: HomePageComponent,
+        data: {
+            breadcrumb: 'Home-Routing',
+        },
     },
 ];
 

@@ -1,5 +1,5 @@
 {
-    "npmScope": "company-name",
+    "npmScope": "openforge",
     "affected": {
         "defaultBase": "develop"
     },
